@@ -1,4 +1,4 @@
-package clase1;
+package claseLibreria;
 
 import java.util.ArrayList;
 

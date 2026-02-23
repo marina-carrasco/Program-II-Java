@@ -1,4 +1,4 @@
-package clase1;
+package claseLibreria;
 
 public class Libro {
 	private String titulo;
