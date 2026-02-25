@@ -39,7 +39,6 @@ public class Zoo {
 		return cantidad;
 	}
 	
-	
 	public ArrayList<Reptil> listaReptiles() {
 		ArrayList<Reptil> lista = new ArrayList<Reptil>();
 		for (int i = 0; i < animal.size(); i++) {
@@ -49,7 +48,6 @@ public class Zoo {
 		return lista;
 		
 	}
-	
 	
 	public float pesoPromedio() {
 		float contador = 0.0f;
