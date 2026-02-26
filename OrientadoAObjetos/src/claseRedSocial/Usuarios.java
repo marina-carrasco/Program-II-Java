@@ -6,10 +6,9 @@ public class Usuarios {
 	private String usuario;
 	private String email;
 	private ArrayList<Publicacion> listaPublicaciones;
-	private ArrayList<Comentario> listaComentarios;
-	
+	private ArrayList<Comentarios> listaComentarios;
 	public Usuarios(String usuario, String email, ArrayList<Publicacion> listaPublicaciones,
-			ArrayList<Comentario> listaComentarios) {
+			ArrayList<Comentarios> listaComentarios) {
 		super();
 		this.usuario = usuario;
 		this.email = email;
@@ -38,10 +37,10 @@ public class Usuarios {
 	public void setListaPublicaciones(ArrayList<Publicacion> listaPublicaciones) {
 		this.listaPublicaciones = listaPublicaciones;
 	}
-	public ArrayList<Comentario> getListaComentarios() {
+	public ArrayList<Comentarios> getListaComentarios() {
 		return listaComentarios;
 	}
-	public void setListaComentarios(ArrayList<Comentario> listaComentarios) {
+	public void setListaComentarios(ArrayList<Comentarios> listaComentarios) {
 		this.listaComentarios = listaComentarios;
 	}
 	@Override
@@ -51,9 +50,5 @@ public class Usuarios {
 	}
 	
 	
-	
-	
-	
-	
-	
+
 }

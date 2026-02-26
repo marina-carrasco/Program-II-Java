@@ -1,47 +1,45 @@
 package claseRedSocial;
 
-public class Video extends Publicacion implements Borrable {
-	public float duracion;
-	public float tamaño;
+public class Videos extends Publicacion implements Borrable{
+	private float duracion;
+	private float tamaño;
 	
-	public Video(float duracion, float tamaño) {
-		super();
+	public Videos(String autor, String fecha, float duracion, float tamaño) {
+		super(autor, fecha);
 		this.duracion = duracion;
 		this.tamaño = tamaño;
 	}
-
-	public Video() {
+	public Videos() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	public Videos(String autor, String fecha) {
+		super(autor, fecha);
+		// TODO Auto-generated constructor stub
+	}
 	public float getDuracion() {
 		return duracion;
 	}
-
 	public void setDuracion(float duracion) {
 		this.duracion = duracion;
 	}
-
 	public float getTamaño() {
 		return tamaño;
 	}
-
 	public void setTamaño(float tamaño) {
 		this.tamaño = tamaño;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Video [duracion=" + duracion + ", tamaño=" + tamaño + "]";
+		return "Videos [duracion=" + duracion + ", tamaño=" + tamaño + ", getAutor()=" + getAutor() + ", getFecha()="
+				+ getFecha() + "]";
 	}
-
 	@Override
-	public void borrar(String borrarContenido) {
+	public void borrar() {
 		// TODO Auto-generated method stub
 		
 	}
-	
 	
 	
 

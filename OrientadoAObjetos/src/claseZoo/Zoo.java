@@ -68,8 +68,21 @@ public class Zoo {
 		return contador;
 	}
 	
-	
-	// implementa una funcion que devuelva cuantos reptiles venenosos hay en el zoo
+	public int cantidadReptilesVenenosos() {
+	    if (animal == null || animal.isEmpty()) return 0;
+
+	    int cantidad = 0;
+	    for (Animal a : animal) {
+	        if (a instanceof Reptil) {
+	            Reptil r = (Reptil) a;
+	            if (r.isVeneno()) {
+	                cantidad++;
+	            }
+	        }
+	    }
+	    return cantidad;
+	}
+
 	
 	
 }

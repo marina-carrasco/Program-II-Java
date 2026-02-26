@@ -1,5 +1,5 @@
 package claseRedSocial;
 
 public interface Editable {
-	void editar(String editarContenido);
+	public void editar();
 }

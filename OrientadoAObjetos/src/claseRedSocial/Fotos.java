@@ -1,17 +1,20 @@
 package claseRedSocial;
 
 public class Fotos extends Publicacion implements Borrable {
-	public float tamaño;
-	public String formato;
-	
-	public Fotos(float tamaño, String formato) {
-		super();
+	private float tamaño;
+	private String formato;
+	public Fotos(String autor, String fecha, float tamaño, String formato) {
+		super(autor, fecha);
 		this.tamaño = tamaño;
 		this.formato = formato;
 	}
-
+	
 	public Fotos() {
 		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Fotos(String autor, String fecha) {
+		super(autor, fecha);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -33,15 +36,15 @@ public class Fotos extends Publicacion implements Borrable {
 
 	@Override
 	public String toString() {
-		return "Fotos [tamaño=" + tamaño + ", formato=" + formato + "]";
+		return "Fotos [tamaño=" + tamaño + ", formato=" + formato + ", getAutor()=" + getAutor() + ", getFecha()="
+				+ getFecha() + "]";
 	}
 
 	@Override
-	public void borrar(String borrarContenido) {
+	public void borrar() {
 		// TODO Auto-generated method stub
 		
 	}
+	
 
-	
-	
 }

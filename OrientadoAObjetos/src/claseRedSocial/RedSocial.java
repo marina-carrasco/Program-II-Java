@@ -3,7 +3,6 @@ package claseRedSocial;
 import java.util.ArrayList;
 
 public class RedSocial {
-	
 	private ArrayList<Usuarios> listaUsuarios;
 
 	public RedSocial(ArrayList<Usuarios> listaUsuarios) {
@@ -28,7 +27,6 @@ public class RedSocial {
 	public String toString() {
 		return "RedSocial [listaUsuarios=" + listaUsuarios + "]";
 	}
-
 	
 
 }
