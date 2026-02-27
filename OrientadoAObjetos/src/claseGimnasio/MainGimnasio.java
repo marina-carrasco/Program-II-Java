@@ -48,6 +48,7 @@ public class MainGimnasio {
 		listaUsuarios.add(admin5);
 		
 		
+		
 
 		Grupal clase1 = new Grupal("Yoga Zen", (Entrenadores) entrenador1, 20, Categoria.Yoga);
 		Grupal clase2 = new Grupal("Crossfit Total", (Entrenadores) entrenador2, 15, Categoria.Cardio);
@@ -55,13 +56,14 @@ public class MainGimnasio {
 	
 
 		ArrayList<Grupal> listaClasesGrupal = new ArrayList<Grupal>();
+		
 		listaClasesGrupal.add(clase1);
 		listaClasesGrupal.add(clase2);
 		listaClasesGrupal.add(clase3);
 		
 		
 		ArrayList<Reserva> listaReservas = new ArrayList<Reserva>();
-
+		
 		Reserva reserva1 = new Reserva((MiembrosRegulares) miembroRegular1, clase1);
 		Reserva reserva2 = new Reserva((MiembrosRegulares) miembroRegular2, clase1);
 		Reserva reserva3 = new Reserva((MiembrosRegulares) miembroRegular3, clase2);
@@ -91,6 +93,8 @@ public class MainGimnasio {
 		miGimnasio.setListaClasesGrupal(listaClasesGrupal);
 		
 		System.out.println(miGimnasio.toString());
+		
+		System.out.println(miGimnasio.claseGrupalMasReservas().getNombre());
 		
 		
 	}

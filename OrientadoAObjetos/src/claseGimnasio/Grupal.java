@@ -5,6 +5,7 @@ public class Grupal {
 	private Entrenadores entrenadorPersonal;
 	private int capacidad;
 	private Categoria categoria;
+	
 	public Grupal(String nombre, Entrenadores entrenadorPersonal, int capacidad, Categoria categoria) {
 		super();
 		this.nombre = nombre;
@@ -12,10 +13,12 @@ public class Grupal {
 		this.capacidad = capacidad;
 		this.categoria = categoria;
 	}
+	
 	public Grupal() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -40,6 +43,7 @@ public class Grupal {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+	
 	@Override
 	public String toString() {
 		return "Grupal [nombre=" + nombre + ", entrenadorPersonal=" + entrenadorPersonal + ", capacidad=" + capacidad

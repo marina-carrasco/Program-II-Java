@@ -3,20 +3,24 @@ package claseGimnasio;
 public class MiembrosRegulares extends Usuarios {
 	private int edad;
 	private String tipoDeMiembro;
+	
 	public MiembrosRegulares(String nombre, String direccion, String numeroTlf, String correo, int edad,
 			String tipoDeMiembro) {
 		super(nombre, direccion, numeroTlf, correo);
 		this.edad = edad;
 		this.tipoDeMiembro = tipoDeMiembro;
 	}
+	
 	public MiembrosRegulares() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public MiembrosRegulares(String nombre, String direccion, String numeroTlf, String correo) {
 		super(nombre, direccion, numeroTlf, correo);
 		// TODO Auto-generated constructor stub
 	}
+	
 	public int getEdad() {
 		return edad;
 	}

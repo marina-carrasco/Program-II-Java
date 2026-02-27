@@ -5,6 +5,7 @@ public abstract class Usuarios {
 	private String direccion;
 	private String numeroTlf;
 	private String correo;
+	
 	public Usuarios(String nombre, String direccion, String numeroTlf, String correo) {
 		super();
 		this.nombre = nombre;
@@ -12,10 +13,12 @@ public abstract class Usuarios {
 		this.numeroTlf = numeroTlf;
 		this.correo = correo;
 	}
+	
 	public Usuarios() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -40,6 +43,7 @@ public abstract class Usuarios {
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
+	
 	@Override
 	public String toString() {
 		return "Usuarios [nombre=" + nombre + ", direccion=" + direccion + ", numeroTlf=" + numeroTlf + ", correo="
