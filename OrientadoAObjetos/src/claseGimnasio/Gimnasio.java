@@ -88,12 +88,11 @@ public class Gimnasio {
 			}
 		}
 		
-		return miembro;
-		
-		
-		
+		return miembro;	
 	}
 	
+	
+	// Ejercicio 5
 	
 	
 }
