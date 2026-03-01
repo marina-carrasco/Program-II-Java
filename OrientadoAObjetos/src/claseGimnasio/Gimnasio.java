@@ -93,6 +93,43 @@ public class Gimnasio {
 	
 	
 	// Ejercicio 5
+	public void reservar(MiembrosRegulares miembro, Grupal grupal) {
+		int cuantasPersonas = 0;
+		for (Reserva reserva : this.listaReservas) {
+			if (reserva.getClases().equals(grupal)) {
+	            cuantasPersonas++;
+	        }
+			
+		}
+		
+		if (cuantasPersonas < grupal.getCapacidad()) {
+		    Reserva nuevaReserva = new Reserva(miembro, grupal);
+		    this.listaReservas.add(nuevaReserva);
+		    System.out.println("Reserva exitosa.");
+		} 
+		else {
+		    System.out.println("No hay sitio en la clase.");
+		}
+		
+	}
 	
 	
+	public void cancelarReserva(MiembrosRegulares miembro, Grupal clase) {
+        Reserva reservaABorrar = null;
+
+        for (Reserva r : this.listaReservas) {
+            if (r.getUsuarios().equals(miembro) && r.getClases().equals(clase)) {
+                reservaABorrar = r;
+                break;
+            }
+        }
+
+        if (reservaABorrar != null) {
+            this.listaReservas.remove(reservaABorrar);
+            System.out.println("Reserva cancelada exitosamente.");
+        } else {
+            System.out.println("Error: No se encontró la reserva.");
+        }
+    }
+
 }

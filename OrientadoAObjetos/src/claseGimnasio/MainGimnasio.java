@@ -96,6 +96,9 @@ public class MainGimnasio {
 		
 		System.out.println(miGimnasio.claseGrupalMasReservas().getNombre());
 		
+		miGimnasio.reservar((MiembrosRegulares) miembroRegular1, clase3);
+		miGimnasio.cancelarReserva((MiembrosRegulares) miembroRegular1, clase1);
+		
 		
 	}
 
